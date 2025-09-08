@@ -22,19 +22,27 @@ A sample **FastAPI** project demonstrating:
 
 ```
 app/
+
   ├── api/                # API layer (routes/endpoints)
   │   ├── error_codes.py
+
   │   └── user_routes.py
   ├── core/               # Core configurations
   │   ├── error_codes.py
+
   │   ├── logger.py
+
   │   └── middleware.py
+
   ├── models/             # Pydantic models
   │   └── user_models.py
+
   ├── repositories/       # Data access layer
   │   └── user_repository.py
+
   ├── services/           # Business logic layer
   │   └── user_service.py
+
   └── main.py             # Application entry point
 ```
 
