@@ -3,18 +3,18 @@
 ```markdown
 # 🚀 FastAPI Error Handling & Logging – Three-Layer Architecture Example
 
-[🇮🇷 نسخه فارسی ⬇](#-نمونه-معماری-سه-لایه--مدیریت-خطا-و-لاگینگ)
+(#-نمونه-معماری-سه-لایه--مدیریت-خطا-و-لاگینگ)
 
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.100%2B-%2300b894?logo=fastapi)
 ![Python](https://img.shields.io/badge/Python-3.10%2B-%233776AB?logo=python)
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-A sample **FastAPI** project demonstrating:
+A sample FastAPI project demonstrating:
 - Advanced error handling (Custom Exceptions + Global Middleware)
 - Professional logging (`RotatingFileHandler` + structured output)
 - Three-layer architecture (API → Service → Repository)
-- Standardized input/output modeling with **Pydantic**
-- Suitable for use as a **Portfolio project** on GitHub
+- Standardized input/output modeling with Pydantic
+- Suitable for use as a Portfolio project on GitHub
 
 
 
@@ -24,10 +24,13 @@ A sample **FastAPI** project demonstrating:
 app/
 
   ├── api/                # API layer (routes/endpoints)
+
   │   ├── error_codes.py
 
   │   └── user_routes.py
+
   ├── core/               # Core configurations
+
   │   ├── error_codes.py
 
   │   ├── logger.py
@@ -35,12 +38,15 @@ app/
   │   └── middleware.py
 
   ├── models/             # Pydantic models
+
   │   └── user_models.py
 
   ├── repositories/       # Data access layer
+
   │   └── user_repository.py
 
   ├── services/           # Business logic layer
+
   │   └── user_service.py
 
   └── main.py             # Application entry point
@@ -50,20 +56,25 @@ app/
 
 ## ⚡ Features
 
-- **Global Error Handling**  
+- Global Error Handling
   All errors are returned in a standardized JSON format (error code, message, timestamp).
-- **Advanced Logging**  
+
+- Advanced Logging
   Uses `RotatingFileHandler` for log file rotation and full traceback logging.
-- **Exception Chaining**  
+
+- Exception Chaining 
   Preserve original exceptions for better debugging.
-- **Three-Layer Structure**  
+
+- Three-Layer Structure
   Complete separation of API, business logic, and data access for scalability.
-- **Full Swagger/OpenAPI Coverage**  
+
+- Full Swagger/OpenAPI Coverage
   Pydantic models with `example` fields for auto-generated, rich documentation.
 
 
 
 ## 📦 Installation & Run
+
 
 ### 1. Clone repo
 ```bash
@@ -132,12 +143,12 @@ Traceback (most recent call last):
 
 [English Version ⬆](#fastapi-error-handling--logging--three-layer-architecture-example)
 
-یک پروژه نمونه **FastAPI** برای نمایش:
+یک پروژه نمونه FastAPI برای نمایش:
 - مدیریت خطای پیشرفته (Custom Exceptions + Global Middleware)
 - لاگینگ حرفه‌ای (`RotatingFileHandler` + خروجی ساختاریافته)
 - معماری سه‌لایه (API → Service → Repository)
-- مدل‌سازی استاندارد ورودی/خروجی با **Pydantic**
-- قابلیت استفاده به عنوان **نمونه کار فنی** در GitHub
+- مدل‌سازی استاندارد ورودی/خروجی با Pydantic
+- قابلیت استفاده به عنوان **نمونه کار فنی در GitHub
 
 
 
@@ -145,11 +156,17 @@ Traceback (most recent call last):
 
 ```
 app/
+
   ├── api/                # لایه API (مسیرها)
+
   ├── core/               # پیکربندی‌ها
+
   ├── models/             # مدل‌های Pydantic
+
   ├── repositories/       # لایه داده
+
   ├── services/           # لایه بیزینس
+
   └── main.py              # نقطه ورود
 ```
 
@@ -157,11 +174,11 @@ app/
 
 ## ⚡ ویژگی‌ها
 
-- **مدیریت خطای سراسری** با فرمت JSON استاندارد
-- **لاگینگ پیشرفته** با چرخش فایل (Rolling Logs)
-- **Exception Chaining** برای حفظ خطای اصلی
-- **معماری سه‌لایه** برای توسعه‌پذیری بیشتر
-- **اتصال کامل به Swagger/OpenAPI** با مثال‌ها
+- مدیریت خطای سراسری با فرمت JSON استاندارد
+- لاگینگ پیشرفته با چرخش فایل (Rolling Logs)
+- **Exception Chaining برای حفظ خطای اصلی
+- معماری سه‌لایه برای توسعه‌پذیری بیشتر
+- اتصال کامل به Swagger/OpenAPI با مثال‌ها
 
 
 
